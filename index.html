@@ -8,8 +8,9 @@
     <title>Window smooth scroll in vanilla JS</title>
     <style>
         html { scroll-behavior: smooth;}
-        body { margin: 0; padding: 0;}
+        body { margin: 0; padding: 0; font-size: large; font-family: sans-serif;}
         nav { 
+            font-size: small;
             box-sizing: border-box;
             position: fixed; 
             text-align: right; 
@@ -17,9 +18,14 @@
             width: 100vw; 
             background-color: aqua;
         }
-        .content { padding: 50px 25px; min-height: 100vh; background-color:azure; }
-        .content:nth-child(even) { background-color:deepskyblue}
-        
+        .content { padding: 50px 25px; min-height: 100vh; background-color:azure;}
+        .content:nth-child(even) { background-color:deepskyblue;}
+        #s1 { background-color: #0FC2C0;}
+        #s2 { background-color: #0CABA8;}
+        #s3 { background-color: #008F8C;}
+        #s4 { background-color: #015958; color: whitesmoke;}
+        #s5 { background-color: #023535; color: whitesmoke;}
+
     </style>
 </head>
 <body>
@@ -35,6 +41,8 @@
     <section id="s3" class="content">Section 3</section>
     <section id="s4" class="content">Section 4</section>
     <section id="s5" class="content">Section 5</section>
+
+    <script src="script.js"></script>
 </body>
 </html>
 
