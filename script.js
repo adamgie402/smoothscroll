@@ -41,13 +41,13 @@ function smoothScroll(e) {
 
     if (currentY < targetY) {
 
-        scrollInterval = setInterval(function() {          
-            window.scrollTo(0, currentY); // start scrolling from current position
-            currentY += 25; // step - speed of movement (jump 200px)
+        scrollInterval = setInterval(function() { // start step-by-step scrolling          
+            currentY += 25; // increase current Y position by this value (25px give smooth scrooling)
+            window.scrollTo(0, currentY); // do sroll step
             // console.log(scrollInterval);
-            if (currentY > targetY) { 
+            if (currentY > targetY) {  // after achieve target Y position 
                 clearInterval(scrollInterval); // stop interval = stop scrolling
-                window.scrollTo(0,targetY); // to precise position set after scrolling step by step
+                window.scrollTo(0,targetY); // to precise action set exactly target Y position
             };
         }, intervalSpeed);
     }
@@ -55,12 +55,11 @@ function smoothScroll(e) {
     if (currentY > targetY) {            
 
         scrollInterval = setInterval(function() {          
-            window.scrollTo(0, currentY); // start scrolling from current position
-            currentY -= 25; // move step-by-step by this value (25px give smooth scrooling)
-            // console.log(scrollInterval);
+            currentY -= 25; 
+            window.scrollTo(0, currentY); 
             if (currentY < targetY) { 
                 clearInterval(scrollInterval); 
-                window.scrollTo(0,targetY); // to precise position set after scrolling step by step
+                window.scrollTo(0,targetY);
             };
         }, intervalSpeed);
     }
