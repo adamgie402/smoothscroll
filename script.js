@@ -1,6 +1,7 @@
 // ***************************************
 // Smooth Scrolling
 // ***************************************
+// use: add class "smoothScroll" to every link, which you want to be smooth-scrolled
 
 // get htmlcollection which has class smoothScrolling
 let smoothScrollAnchors = document.getElementsByClassName('smoothScrolling');

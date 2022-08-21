@@ -13,12 +13,13 @@
             font-size: small;
             box-sizing: border-box;
             position: fixed; 
-            text-align: right; 
-            padding: 5px 35px; 
+            text-align: center; 
+            padding: 5px 25px 5px 5px; 
             width: 100vw; 
             background-color: aqua;
         }
-        nav a { text-decoration: none; color: black; margin-left: 20px; font-weight: bold;}
+        nav a { text-decoration: none; color: black; margin-left: 0px; font-weight: bold; padding-left: 5px; border-left: 1px solid black;}
+        nav a:last-child { padding-right: 5px; border-right: 1px solid black; }
         nav a:hover { color:azure}
         .content { padding: 50px 25px; min-height: 100vh; background-color:azure;}
         .content:nth-child(even) { background-color:deepskyblue;}
@@ -31,18 +32,18 @@
     </style>
 </head>
 <body>
-    <nav id="navbar"><em>Smooth scrolling in vanilla JavaScript. Select section to scroll ---></em>
+    <nav id="navbar">
         <a href="#s1" id="a1" class="smoothScrolling">Section 1</a>
         <a href="#s2" id="a2" class="smoothScrolling">Section 2</a>
         <a href="#s3" id="a3" class="smoothScrolling">Section 3</a>
         <a href="#s4" id="a4" class="smoothScrolling">Section 4</a>
         <a href="#s5" id="a5" class="smoothScrolling">Section 5</a>
     </nav>
-    <section id="s1" class="content">Section 1</section>
-    <section id="s2" class="content">Section 2</section>
-    <section id="s3" class="content">Section 3</section>
-    <section id="s4" class="content">Section 4</section>
-    <section id="s5" class="content">Section 5</section>
+    <section id="s1" class="content"><h1>Section 1</h1><p>Smooth scrolling in vanilla JavaScript. Please, select section to scroll in top menu.</p></section>
+    <section id="s2" class="content"><h1>Section 2</h1></section>
+    <section id="s3" class="content"><h1>Section 3</h1></section>
+    <section id="s4" class="content"><h1>Section 4</h1></section>
+    <section id="s5" class="content"><h1>Section 5</h1></section>
 
     <script src="script.js"></script>
 
