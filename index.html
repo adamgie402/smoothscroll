@@ -14,10 +14,12 @@
             box-sizing: border-box;
             position: fixed; 
             text-align: right; 
-            padding: 5px 25px; 
+            padding: 5px 35px; 
             width: 100vw; 
             background-color: aqua;
         }
+        nav a { text-decoration: none; color: black; margin-left: 20px; font-weight: bold;}
+        nav a:hover { color:azure}
         .content { padding: 50px 25px; min-height: 100vh; background-color:azure;}
         .content:nth-child(even) { background-color:deepskyblue;}
         #s1 { background-color: #0FC2C0;}
@@ -29,7 +31,7 @@
     </style>
 </head>
 <body>
-    <nav id="navbar">
+    <nav id="navbar"><em>Smooth scrolling in vanilla JavaScript. Select section to scroll ---></em>
         <a href="#s1" id="a1" class="smoothScrolling">Section 1</a>
         <a href="#s2" id="a2" class="smoothScrolling">Section 2</a>
         <a href="#s3" id="a3" class="smoothScrolling">Section 3</a>
