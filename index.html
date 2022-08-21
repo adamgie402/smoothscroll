@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="adamgie402">
+    <title>Window smooth scroll in vanilla JS</title>
+    <style>
+        html { scroll-behavior: smooth;}
+        body { margin: 0; padding: 0;}
+        nav { 
+            box-sizing: border-box;
+            position: fixed; 
+            text-align: right; 
+            padding: 5px 25px; 
+            width: 100vw; 
+            background-color: aqua;
+        }
+        .content { padding: 50px 25px; min-height: 100vh; background-color:azure; }
+        .content:nth-child(even) { background-color:deepskyblue}
+        
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <a href="#s1" id="a1" class="smoothScrolling">Section 1</a>
+        <a href="#s2" id="a2" class="smoothScrolling">Section 2</a>
+        <a href="#s3" id="a3" class="smoothScrolling">Section 3</a>
+        <a href="#s4" id="a4" class="smoothScrolling">Section 4</a>
+        <a href="#dupa" id="a5" class="smoothScrolling">Section 5</a>
+    </nav>
+    <section id="s1" class="content">Section 1</section>
+    <section id="s2" class="content">Section 2</section>
+    <section id="s3" class="content">Section 3</section>
+    <section id="s4" class="content">Section 4</section>
+    <section id="s5" class="content">Section 5</section>
+</body>
+</html>
+
+
+
