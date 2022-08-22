@@ -4,7 +4,7 @@
 // use: add class "smoothScroll" to every link, which you want to be smooth-scrolled
 
 window.onload = function(){
-    console.log("f onload...");
+    console.log("f onload... (add event listener)");
 
     // get htmlcollection which has class smoothScrolling
     let smoothScrollAnchors = document.getElementsByClassName('smoothScrolling');
@@ -28,16 +28,12 @@ function smoothScroll() {
     // console.log(e);    
     // target anchor of clicked element:
     // console.log(e.target.hash);
-
     
     // Preventing many intervals in this same time:
     // Chceck for previous interval runing (if interval exist is always a number)
     // so, if it exist - use clearInterval(intervalName)
     // (you cannot use clearInterval if interval doesn't exist - error: is not defined)
-    if (typeof scrollInterval == "number") { clearInterval(scrollInterval); }
-    // if (typeof interval == "number") { clearInterval(interval); }
-    
-
+    if (typeof scrollInterval == "number") { clearInterval(scrollInterval); }    
     
     let href = this.getAttribute('jshref'); // get anchor value (target id on page)      
     let p = href.indexOf("#"); // position of # in href addres
